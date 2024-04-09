@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.navbar li{
+     margin:0 12px;
+    list-style: none;
+}
+
+.navbar .krish{
+    color: rgb(246,18,18);
+    font-size: 2rem;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    height: 67px;
+    font-size: 1.3rem;
+}
+
+.list li:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.btn{
+    padding:4px 12px;
+    color:white;
+    background-color: rgb(29,88,214);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+.btn:hover{
+    color: rgb(29,88,214);
+    background-color: white;
+}
+
+.maintop{
+    display: flex;
+    flex-direction:row;
+}
+
+.topleft{
+    width: 50%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: auto;
+   margin: 0 30px;
+   padding: 0 2px;
+}
+
+.topleft .dumbell{
+    width: 300px;
+    height:40vh;
+
+}
+
+.topleft .services{
+    margin: 30px 0;
+}
+
+.topleft p{
+ text-align: center;
+ padding: 20px 0;
+}
+
+.topright{
+    width: 50%;
+}
+
+.topright .gympic{
+    width:30vw;
+    height:90vh;
+    padding-left:240px;
+
+}
+
+.section2{
+    padding-top: 64px;
+}
+
+.section2 h1{
+    margin: 20px 0;
+    width: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.section2 .p2{
+    padding: 0 14vw;
+    text-align: center;
+}
+
+.boxes{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:row;
+}
+
+.boxes .box{
+    border: solid rgb(210,204,204);
+    margin: 22px 20px;
+    width: 18vw;
+    height: 44vh;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.box{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.box h2{
+    padding: 12px 0px;
+}
+
+.box li{
+    list-style: none;
+    margin: 12px 2px;
+}
+
+.prices{
+    font-size: 2rem;
+}
+
+.btn2{
+    margin: 15px;
+    border:1.5px solid black;
+    padding:4px 12px;
+    color:white;
+    background-color: rgb(29,88,214);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+.btn2:hover{
+    color: rgb(29,88,214);
+    background-color: white;
+}
+
+.plan-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .table{
+    text-align: center;
+    width: 40vw;
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+
+.section3 h2{
+    margin: 20px 0;
+    width: 20px 0px;
+    text-align:center;
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+}
+
+.section3 table th{
+    width: 19vw;
+    border-bottom: 1px solid ;
+    padding: 15px 0;
+}
+
+.section3 table td{
+    widows:1vw;
+    padding: 0 110px;
+    border-bottom: 1px solid ;
+}
+
+.text-start td{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.buttons{
+    display: flex;
+}
+
+.btns{
+    margin: 15px;
+    border:1.5px solid black;
+    padding:4px 12px;
+    color:white;
+    background-color: rgb(29,88,214);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:1rem;
+}
+
+.deal{
+    color: red;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+}
+
+.options a:hover{
+    color: rgb(29,88,214);
+}
+
+
+/* CSS for screens smaller than 768px (tablets and phones) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .list {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+    
+    .list li {
+      margin: 10px 0;
+    }
+    
+    .topleft {
+      margin: 0;
+    }
+    
+    .topleft .dumbell {
+      width: 100%;
+      height: auto;
+    }
+    
+    .topright .gympic {
+      width: 100%;
+      height: auto;
+      padding-left: 0;
+    }
+    
+    .box {
+      width: 80%;
+      margin: 20px auto;
+    }
+    
+    .section3 .table {
+      width: 100%;
+      padding: 0 10px;
+    }
+    
+    .section3 table th,
+    .section3 table td {
+      padding: 10px 5px;
+    }
+
+    .boxes{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    
+    .box{
+        flex-grow:3;
+        flex-basis:200;
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+  }
+  
+  /* CSS for screens smaller than 480px (phones) */
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      padding: 10px;
+    }
+    
+    .navbar .krish {
+      font-size: 1.5rem;
+    }
+    
+    .list li {
+      font-size: 0.9rem;
+    }
+    
+    .topleft,
+    .topright {
+      width: 100%;
+      padding: 0 10px;
+    }
+    
+    .topleft .services {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .topleft .dumbell {
+      width: 80%;
+    }
+    
+    .topright .gympic {
+      width: 80%;
+      padding-left: 0;
+    }
+    
+    .section2 .p2 {
+      padding: 0 10px;
+    }
+
+    .boxes{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    
+    .box{
+        flex-grow:3;
+        flex-basis:200;
+        width: auto;
+        height: auto;
+        padding: auto;
+    }
+
+    .boxes{
+        padding-top: 200px;
+    }
+
+    .Enterprise{
+        padding-top: 100px;
+    }
+  }
+  
